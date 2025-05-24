@@ -67,3 +67,21 @@ git checkout <commit id> a.txt
 git status
 git log
 git checkout <commit id> a.txt
+
+多用户修改后与库版本不一致
+1、能自动合并的冲突
+git pull
+git push
+ 
+2、需要手动合并的冲突
+git push报错后
+git status查看问题文件
+git diff abc.txt  查看何处变动
+git pull  变为合并中merging状态后 手动合并
+git status
+git diff abc.txt
+git log
+git add .
+git commit -m "修改信息"  此时merging状态结束
+git log
+git push
