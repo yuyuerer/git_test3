@@ -1,3 +1,9 @@
+git下载
+https://git-scm.com/downloads
+
+初始化本地库
+git init
+
 远程库下载到本地库
 git clone https://github.com/yuyuerer/Python.git
 
@@ -8,11 +14,20 @@ git status
 
 保存修改到本地库
 git add README.md
+或者 git add .
 git commit -m "第一次修改readme"
 
 推送到远程仓库
 git remote -v
 git push
+
+分支
+git branch
+git branch -a
+创建/切换分支
+git checkout -b origin/dev
+上传到指定分支
+git push --set-upstream origin dev
 
 修改后leader同步
 git pull
